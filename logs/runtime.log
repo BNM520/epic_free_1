@@ -1,24 +1,23 @@
-2024-09-17 22:31:44 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-09-17 22:31:53 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
-2024-09-17 22:31:56 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=Q7nDCTEdeGfyqxcrRCGSlzLelITs96xB_AsepmJ4x9s-1726583516-0.0.1.1-6676'}
-2024-09-17 22:32:26 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2024-09-17 22:32:28 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=Y38.kGK5pDz7GcPSgAJM676fwh7N7faXWOq4Vk1WzX8-1726583548-0.0.1.1-7529'}
-2024-09-17 22:32:58 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2024-09-17 22:33:00 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=6mcKU_yopUCW8X99SKTQZHTMFEZNX7gLkHiCCPGC7MM-1726583580-0.0.1.1-7572'}
-2024-09-17 22:33:30 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2024-09-17 22:33:31 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3655), thread 'MainThread' (140518162312064): - {}
+2024-09-24 22:34:22 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-09-24 22:34:31 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2024-09-24 22:35:01 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2024-09-24 22:35:04 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=.UrDVmJ2oJN3z3oLI2.LiW9AxCqd4I85YnAypJIYS5A-1727188504-0.0.1.1-7572'}
+2024-09-24 22:35:34 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2024-09-24 22:35:36 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=3cuYSK2kIYWrBH0_THEs2lIRnSNKTNHoDU_V3rntiuE-1727188536-0.0.1.1-7551'}
+2024-09-24 22:36:06 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2024-09-24 22:36:06 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3695), thread 'MainThread' (139627155401600): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic_free_1/epic_free_1/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
     self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
     self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
     handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
 > File "/home/runner/work/epic_free_1/epic_free_1/epic/src/claim.py", line 158, in run
     await agent.stash()
